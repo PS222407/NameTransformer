@@ -1,7 +1,5 @@
 <?php
 
-use Exception;
-
 trait NameTransformer
 {
     public function transformName($fullname): array

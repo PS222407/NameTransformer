@@ -1,0 +1,13 @@
+{
+    "name": "jensramakers/name-transformer",
+    "homepage": "https://github.com/PS222407/NameTransformer",
+    "description": "Transforms names with proper capitalization",
+    "autoload": {
+        "psr-0": {
+            "NameTransformer": "src"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    }
+}

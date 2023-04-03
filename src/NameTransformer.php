@@ -2,7 +2,7 @@
 
 trait NameTransformer
 {
-    public function transformName($fullname): array
+    public function transformName($fullname): Person
     {
         $name = trim(preg_replace('/\s+/', ' ', $fullname));
         $nameExploded = explode(' ', $name);
@@ -19,23 +19,10 @@ trait NameTransformer
         $insertion = strtolower(implode(' ', $insertionPrepArr));
         $insertion = $insertion === '' ? null : $insertion;
 
-        $fullname = $firstname;
-        if ($insertion) {
-            $fullname .= " $insertion";
-        }
-        if ($lastname) {
-            $fullname .= " $lastname";
-        }
-
-        return [
-            'firstname' => $firstname,
-            'insertion' => $insertion,
-            'lastname' => $lastname,
-            'fullname' => $fullname,
-        ];
+        return new Person($firstname, $insertion, $lastname);
     }
 
-    public function transformUsername($username)
+    public function transformUsername($username): string
     {
         return trim(preg_replace('/\s+/', ' ', $username));
     }

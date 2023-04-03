@@ -6,11 +6,11 @@ class Person
 {
     private string $firstName;
 
-    private string $insertion;
+    private ?string $insertion;
 
     private string $lastName;
 
-    public function __construct(string $firstName, string $insertion, string $lastName)
+    public function __construct(string $firstName, ?string $insertion, string $lastName)
     {
         $this->firstName = $firstName;
         $this->insertion = $insertion;

@@ -32,7 +32,7 @@ class Person
         return $this->firstName;
     }
 
-    public function getInsertion(): string
+    public function getInsertion(): ?string
     {
         return $this->insertion;
     }

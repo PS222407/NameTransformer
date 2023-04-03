@@ -3,8 +3,8 @@
     "homepage": "https://github.com/PS222407/NameTransformer",
     "description": "Transforms names with proper capitalization",
     "autoload": {
-        "psr-0": {
-            "NameTransformer": "src"
+        "psr-4": {
+            "NameTransformer\\": "src/"
         }
     },
     "require": {

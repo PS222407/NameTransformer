@@ -1,5 +1,7 @@
 <?php
 
+namespace NameTransformer;
+
 class Person
 {
     private string $firstName;

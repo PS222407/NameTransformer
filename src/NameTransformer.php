@@ -1,5 +1,9 @@
 <?php
 
+namespace NameTransformer;
+
+use Exception;
+
 trait NameTransformer
 {
     public function transformName($fullname): Person
